@@ -1,0 +1,30 @@
+# Composer dependencies
+/vendor/
+/tests/
+
+# Composer lock file (optional for libraries)
+composer.lock
+
+# IDE / Editor files
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# PHPUnit / coverage outputs
+coverage/
+.phpunit.result.cache
+
+# Local environment
+.env
+.env.local
+
+# Optional: Ignore local test artifacts or full test folder
+# (uncomment next line if you want to exclude tests entirely)
+# /tests/

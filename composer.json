@@ -1,0 +1,22 @@
+{
+  "name": "felconca/redis-cache",
+  "description": "Lightweight pure PHP Redis client without native extensions (no redis.dll required).",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Felcon Albaladejo",
+      "email": "felcon.albaladejo@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Redis\\RedisCache\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
