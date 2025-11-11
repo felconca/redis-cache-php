@@ -1,7 +1,6 @@
 # Composer dependencies
 /vendor/
-/tests/
-
+/test/
 # Composer lock file (optional for libraries)
 composer.lock
 
