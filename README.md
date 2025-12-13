@@ -25,7 +25,7 @@ Composer will handle autoloading, so you can start using it immediately.
 <?php
 require 'vendor/autoload.php';
 
-use RedisCache\RedisCache;
+use Redis\RedisCache;
 
 // Create a Redis client
 $redis = new RedisCache([
