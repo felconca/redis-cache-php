@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Redis\\RedisCache\\": "src/"
+      "Redis\\": "src/"
     }
   },
   "minimum-stability": "stable",
