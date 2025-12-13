@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName\RedisCache;
+namespace Redis\RedisCache;
 
 /**
  * Pure PHP Redis client — no redis.dll or phpredis extension required.
