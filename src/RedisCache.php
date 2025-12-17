@@ -39,14 +39,14 @@ class RedisCache
 
     public function __construct(array $options = [])
     {
-        $this->host          = $options['host']          ?? '127.0.0.1';
-        $this->port          = $options['port']          ?? 6379;
-        $this->timeout       = $options['timeout']       ?? 1.0;
-        $this->persistent    = $options['persistent']    ?? true;
-        $this->autoReconnect = $options['autoReconnect'] ?? true;
-        $this->jsonMode      = $options['json']          ?? false;
-        $this->password      = $options['password']      ?? null;
-        $this->database      = $options['database']      ?? 0;
+        $this->host          = isset($options['host'])          ? $options['host']          : '127.0.0.1';
+        $this->port          = isset($options['port'])          ? $options['port']          : 6379;
+        $this->timeout       = isset($options['timeout'])       ? $options['timeout']       : 1.0;
+        $this->persistent    = isset($options['persistent'])    ? $options['persistent']    : true;
+        $this->autoReconnect = isset($options['autoReconnect']) ? $options['autoReconnect'] : true;
+        $this->jsonMode      = isset($options['json'])          ? $options['json']          : false;
+        $this->password      = isset($options['password'])      ? $options['password']      : null;
+        $this->database      = isset($options['database'])      ? $options['database']      : 0;
     }
 
     /** Connect or reuse connection */
